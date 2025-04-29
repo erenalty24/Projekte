@@ -1,0 +1,177 @@
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: #f8f4e3;
+    padding: 50px;
+}
+h1{
+    position: absolute;
+    top: 42px;  /* Abstand vom oberen Rand */
+    left: 170px;
+
+    color: darkslategray;
+}
+h2 {
+    font-family:Tahoma, Verdana, sans-serif;
+    color: darkslategray;
+    margin-bottom: 250px;
+    font-size: 24px;
+    top: 280px;
+    position: relative;
+}
+.timer {
+    font-size: 300px;
+    font-weight: bold;
+    color: darkslategrey;
+    margin-top: 0px;
+}
+
+
+.buttons button {
+    margin: 5px;
+    padding: 25px 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+.buttons button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.buttons button:hover {
+    opacity: 0.8;
+}
+.focus-btn { background-color: red; color: white; }
+.short-break-btn { background-color: purple; color: white; }
+.long-break-btn { background-color: green; color: white; }
+.start-btn { 
+    background-color: #b33939;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 15px 20px;
+    transition: transform 0.1s, box-shadow 0.1s;
+    border-radius: 7px;
+    border: none;
+}
+.start-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.start-btn:hover {
+    opacity: 0.8;
+}
+
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+    right: 30px;
+}
+
+
+/* Elemente, die im Dark Mode heller sein sollen */
+.dark-mode .buttons button,
+.dark-mode .start-btn,
+.dark-mode .timer {
+    filter: brightness(1.2);
+}
+
+/* Spezielles Dark Mode Styling für Buttons */
+.dark-mode .start-btn {
+    background-color: darkred; /* Dunkleres Rot */
+}
+
+/* Farben für verschiedene Modi */
+.dark-mode .focus-btn { background-color: red; }
+.dark-mode .short-break-btn { background-color: purple; }
+.dark-mode .long-break-btn { background-color: green; }
+
+/* Timer-Farbe */
+.dark-mode .timer {
+    color: beige; /* Helle Schrift für den Timer */
+}
+
+.dark-mode{
+    color: darkred;
+}
+
+
+
+/* Login-Button */
+.login-btn {
+    position: absolute;
+    top: 20px;
+    right: 80px; /* Passt ihn neben den Dark Mode Button an */
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: darkred;
+}
+
+/* Modal Hintergrund */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal-Box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Schließen-Button */
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Eingabefelder */
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Login-Button im Modal */
+.modal-content button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.modal-content button:hover {
+    background-color: #218838;
+}
+
